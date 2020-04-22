@@ -1,0 +1,11 @@
+policies:
+#  - name: MemoizationPolicy
+  - name: EmbeddingPolicy
+#    type: lstm
+    max_history: 2
+    epochs: 100
+    batch_size: [128, 264]
+    batch_strategy: sequence
+    loss_type: softmax
+    hidden_layers_sizes_pre_dial: [256, 128]
+    hidden_layers_sizes_bot: [256, 128]
